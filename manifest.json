@@ -1,0 +1,13 @@
+{
+  "background_color": "#000000",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "portfolio-cognify.vercel",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "portfolio-cognify.vercel",
+  "start_url": "/",
+  "theme_color": "#4b3766",
+  "id": "125",
+  "description": "Cognify Portfolio"
+}
