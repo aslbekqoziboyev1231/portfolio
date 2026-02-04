@@ -1,0 +1,7 @@
+{
+  "name": "Cognify Portfolio",
+  "description": "Next-Gen AI & IT Solutions Portfolio.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

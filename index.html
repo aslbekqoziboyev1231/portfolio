@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognify | Next-Gen AI & IT Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        // Shim process.env for browser compatibility
+        window.process = {
+            env: {
+                NODE_ENV: 'development'
+            }
+        };
+    </script>
+    <style>
+        :root {
+            --bg-color: #030712;
+            --text-color: #f9fafb;
+            --glass-bg: rgba(17, 24, 39, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --card-bg: rgba(17, 24, 39, 0.3);
+            --muted-text: #9ca3af;
+        }
+
+        .light-mode {
+            --bg-color: #ffffff;
+            --text-color: #030712;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(0, 0, 0, 0.1);
+            --card-bg: rgba(243, 244, 246, 0.5);
+            --muted-text: #4b5563;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            overflow-x: hidden;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Background Animations */
+        @keyframes float-gradient-1 {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(10%, 15%) scale(1.1); }
+            66% { transform: translate(-5%, 20%) scale(0.9); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+        @keyframes float-gradient-2 {
+            0% { transform: translate(0, 0) scale(1.2); }
+            33% { transform: translate(-15%, -10%) scale(1); }
+            66% { transform: translate(10%, -20%) scale(1.1); }
+            100% { transform: translate(0, 0) scale(1.2); }
+        }
+        .animate-gradient-slow-1 {
+            animation: float-gradient-1 25s ease-in-out infinite;
+        }
+        .animate-gradient-slow-2 {
+            animation: float-gradient-2 30s ease-in-out infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #374151;
+        }
+
+        /* Responsive Text Overrides */
+        .text-main { color: var(--text-color); }
+        .text-muted { color: var(--muted-text); }
+        .bg-card { background-color: var(--card-bg); }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "recharts": "https://esm.sh/recharts@3.7.0?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@1.39.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
